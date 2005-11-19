@@ -1,10 +1,7 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"])')
-%define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
+%define tarname gen
 Summary:	Gen library for Nitro + Og
 Summary(pl):	Biblioteka Gen dla Nitro + Og
 Name:		ruby-Gen
-%define tarname gen
 Version:	0.25.0
 Release:	1
 License:	Ruby-alike
@@ -12,6 +9,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/download.php/7167/%{tarname}-%{version}.zip
 # Source0-md5:	ff6a5cabc188ef3cc6f57cac29f22fd8
 URL:		http://nitrohq.com/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 #BuildArch:	noarch
@@ -24,7 +22,6 @@ This package contains the Gen for Nitro + Og.
 Ten pakiet zawiera bibliotekê Gen dla Nitro + Og.
 
 %prep
-#%setup -q -n %{tarname}-%{version}
 %setup -q -n %{tarname}
 
 %build
