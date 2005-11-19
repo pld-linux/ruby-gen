@@ -5,12 +5,12 @@ Summary:	Gen library for Nitro + Og
 Summary(pl):	Biblioteka Gen dla Nitro + Og
 Name:		ruby-Gen
 %define tarname gen
-Version:	0.24.0
+Version:	0.25.0
 Release:	1
 License:	Ruby-alike
 Group:		Development/Languages
-Source0:	http://rubyforge.org/download.php/6768/%{tarname}-%{version}.tgz
-# Source0-md5:	4dba19c84b3e2dc3a21642f14c1060c9
+Source0:	http://rubyforge.org/download.php/7167/%{tarname}-%{version}.zip
+# Source0-md5:	ff6a5cabc188ef3cc6f57cac29f22fd8
 URL:		http://nitrohq.com/
 BuildRequires:	ruby
 Requires:	ruby
@@ -24,7 +24,8 @@ This package contains the Gen for Nitro + Og.
 Ten pakiet zawiera bibliotekê Gen dla Nitro + Og.
 
 %prep
-%setup -q -n %{tarname}-%{version}
+#%setup -q -n %{tarname}-%{version}
+%setup -q -n %{tarname}
 
 %build
 rdoc --ri --op ri lib
