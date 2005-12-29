@@ -9,9 +9,9 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/download.php/7167/%{tarname}-%{version}.zip
 # Source0-md5:	ff6a5cabc188ef3cc6f57cac29f22fd8
 URL:		http://nitrohq.com/
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
