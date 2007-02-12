@@ -1,6 +1,6 @@
 %define tarname gen
 Summary:	Gen library for Nitro + Og
-Summary(pl):	Biblioteka Gen dla Nitro + Og
+Summary(pl.UTF-8):   Biblioteka Gen dla Nitro + Og
 Name:		ruby-Gen
 Version:	0.25.0
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains the Gen for Nitro + Og.
 
-%description -l pl
-Ten pakiet zawiera bibliotekê Gen dla Nitro + Og.
+%description -l pl.UTF-8
+Ten pakiet zawiera bibliotekÄ™ Gen dla Nitro + Og.
 
 %prep
 %setup -q -n %{tarname}
