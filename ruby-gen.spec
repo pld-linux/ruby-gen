@@ -11,9 +11,10 @@ Source0:	http://rubyforge.org/download.php/7167/%{pkgname}-%{version}.zip
 URL:		http://nitrohq.com/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
+BuildRequires:	unzip
 %{?ruby_mod_ver_requires_eq}
-Obsoletes:	ruby-Gen
 Provides:	ruby-Gen
+Obsoletes:	ruby-Gen
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
